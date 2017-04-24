@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "deviceinfo/classes/home/ZZHomeVC.m"
-            timestampString = "514698312.565016"
+            timestampString = "514705879.646032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
+            startingLineNumber = "416"
+            endingLineNumber = "416"
             landmarkName = "-locationManager:didUpdateLocations:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "deviceinfo/classes/home/ZZHomeVC.m"
-            timestampString = "514698312.565016"
+            timestampString = "514705879.646032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "-getLocation"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "deviceinfo/classes/home/ZZHomeVC.m"
-            timestampString = "514698312.565016"
+            timestampString = "514705879.646032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "-lockScreen"
             landmarkType = "7">
          </BreakpointContent>
@@ -125,70 +125,6 @@
             timestampString = "514698312.565016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-dir2map:path:node:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "deviceinfo/classes/home/ZZHomeVC.m"
-            timestampString = "514698312.565016"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-dir2map:path:node:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZZHomeVC dir2map:path:node:]"
-                  moduleName = "deviceinfo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anyware/Documents/MyProject/Compony/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/deviceinfo/deviceinfo/classes/home/ZZHomeVC.m"
-                  timestampString = "514697739.90487"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "596">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZZHomeVC dir2map:path:node:]"
-                  moduleName = "deviceinfo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anyware/Documents/MyProject/Compony/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/deviceinfo/deviceinfo/classes/home/ZZHomeVC.m"
-                  timestampString = "514697739.907061"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "608">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "deviceinfo/classes/home/ZZHomeVC.m"
-            timestampString = "514698312.565016"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
             landmarkName = "-dir2map:path:node:"
@@ -207,6 +143,86 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
+            landmarkName = "-dir2map:path:node:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "deviceinfo/classes/home/ZZHomeVC.m"
+            timestampString = "514704883.631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-dir2json:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "deviceinfo/classes/home/ZZHomeVC.m"
+            timestampString = "514705280.349522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-dir2map:path:node:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZZHomeVC dir2map:path:node:]"
+                  moduleName = "deviceinfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyware/Documents/MyProject/Compony/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/deviceinfo/deviceinfo/classes/home/ZZHomeVC.m"
+                  timestampString = "514705430.658184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZZHomeVC dir2map:path:node:]"
+                  moduleName = "deviceinfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyware/Documents/MyProject/Compony/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/deviceinfo/deviceinfo/classes/home/ZZHomeVC.m"
+                  timestampString = "514705430.660491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "deviceinfo/classes/home/ZZHomeVC.m"
+            timestampString = "514705293.173952"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-dir2map:path:node:"
             landmarkType = "7">
          </BreakpointContent>

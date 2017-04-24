@@ -92,26 +92,60 @@
         if(!isDir){
             NSString *fileSize = [self getFileSizeByPath:path fileManager:fm];
             [node.children addObject:[ZZFileNode nodeWithPath:path children:nil type:@"file" fileSize:fileSize]];
-        }
-    }
-    if(fm != nil && [fm fileExistsAtPath:path isDirectory:&isDir]){
-        if(isDir){
+        }else{
             for (NSString* fileName in [fm contentsOfDirectoryAtPath:path error:nil]) {
                 NSString *subPath = [path stringByAppendingPathComponent:fileName];
-                ZZFileNode *subNode = [ZZFileNode nodeWithPath:subPath children:[NSMutableArray array] type:@"dir" fileSize:[self getFileSizeByPath:subPath fileManager:fm]];
-                [node.children addObject:subNode];
-                [self dir2map:fm path:subPath node:subNode];
+                ZZFileNode *subNode = nil;
+                if([fm fileExistsAtPath:subPath isDirectory:&isDir]){
+                    NSString *subFileSize = [self getFileSizeByPath:subPath fileManager:fm];
+                    if(isDir){
+                        subNode = [ZZFileNode nodeWithPath:subPath children:[NSMutableArray array] type:@"dir" fileSize:subFileSize];
+                        [node.children addObject:subNode];
+                        [self dir2map:fm path:subPath node:subNode];
+                    }else{
+                        subNode = [ZZFileNode nodeWithPath:subPath children:nil type:@"file" fileSize:subFileSize];
+                        [node.children addObject:subNode];
+                        continue;
+                    }
+                }
             }
         }
     }
-    
 }
--(NSString*)getFileSizeByPath:(NSString*)path fileManager:(NSFileManager*)fm{
-    if(fm != nil && [fm fileExistsAtPath:path isDirectory:false]){
-        NSDictionary *dic = [fm attributesOfItemAtPath:path error:nil];
-        return [NSString stringWithFormat:@"%llu",[dic fileSize]];
+-(NSString*)getFileSizeByPath:(NSString*)filePath fileManager:(NSFileManager*)fm{
+//    if(fm != nil && [fm fileExistsAtPath:path isDirectory:false]){
+//        NSDictionary *dic = [fm attributesOfItemAtPath:path error:nil];
+//        return [NSString stringWithFormat:@"%llu",[dic fileSize]];
+//    }
+
+    NSInteger totalSize = 0;
+    BOOL isDir;
+    if([fm fileExistsAtPath:filePath isDirectory:&isDir]){
+        if(!isDir){
+            NSDictionary *dict = [fm attributesOfItemAtPath:filePath error:nil];
+            totalSize = [dict fileSize];
+            return [NSString stringWithFormat:@"%ld",(long)totalSize];
+        }
     }
-    return @"0";
+
+    NSArray * subPaths = [fm subpathsAtPath:filePath];
+    for (NSString * fileName in subPaths) {
+        NSString * subPath = [filePath stringByAppendingPathComponent:fileName];
+
+        if ([fileName hasPrefix:@".DS"]) {
+            continue;
+        }
+
+        BOOL isDirectory;
+        [fm fileExistsAtPath:subPath isDirectory:&isDirectory];
+        if (isDirectory) {
+            continue;
+        }
+
+        NSDictionary *dict = [fm attributesOfItemAtPath:subPath error:nil];
+        totalSize += [dict fileSize];
+    }
+    return [NSString stringWithFormat:@"%ld",(long)totalSize];
 }
 //遍历目录
 -(void)showFiles:(NSString *)path;{

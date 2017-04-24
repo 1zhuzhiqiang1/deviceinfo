@@ -14,11 +14,12 @@
 +(ZZFileNode*)nodeWithPath:(NSString*)path children:(NSMutableArray*)children type:(NSString*)type fileSize:(NSString*)fileSize{
     ZZFileNode *node = [[ZZFileNode alloc] init];
     node.path = path;
-    if(children == nil){
-        node.children = [NSMutableArray array];
-    }else{
-        node.children = children;
-    }
+//    if(children == nil){
+//        node.children = [NSMutableArray array];
+//    }else{
+//        node.children = children;
+//    }
+    node.children = children;
     node.name = [path lastPathComponent];
     node.type = type;
     node.fileSize = fileSize;
